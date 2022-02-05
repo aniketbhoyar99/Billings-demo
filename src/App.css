@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+.billing-app-bg {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background: #c5e4e7;
+  padding: 20px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form_wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 45px;
+}
+
+.tip_section input[type="radio"] {
+  appearance: none;
+  padding: 20px 40px;
+  background: #00474b;
+  max-width: 15px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tip_section input[type="radio"] :active {
+  background-color: aquamarine;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.radio-button_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 285px;
+  width: 100%;
+  margin-bottom: 19px;
+}
+
+.tip_section label {
+  position: absolute;
+  color: aliceblue;
+  left: 25px;
+  top: 14px;
+}
+
+.input_group {
+  position: relative;
+}
+
+.heading span {
+  display: block;
+}
+
+.heading {
+  text-align: center;
+  font-size: 21px;
+  color: #00474b;
+  text-transform: uppercase;
+}
+
+.form {
+  max-width: 300px;
+  width: 100%;
+  background: #fff;
+  padding: 15px;
+}
+
+input[type="number"] {
+  display: block;
+  margin-top: 9px;
+  max-width: 240px;
+  width: 100%;
+  padding: 9px;
+  border-radius: 6px;
+  background: #c5e4e7;
+}
+
+.display-section {
+  max-width: 400px;
+  width: 100%;
+  background: #00474b;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner_wrapper {
+  padding: 25px;
+  background: #fff;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  max-width: 600px;
+  border-radius: 15px;
+}
+
+.input_group input[type="text"] {
+  max-width: 56px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin: 3px 5px;
+  background: #e0fdfb;
+}
+
+.tip-and-lable-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.price-value {
+  color: #36aea2;
+}
+.price-label {
+  color: white;
+}
+
+button[type="reset"] {
+  max-width: 215px;
+  width: 100%;
+  background-color: #36aea2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.display-section-inner {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .inner_wrapper {
+    width: auto;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .btn-wrapper {
+    margin-bottom: 15px;
+  }
+  .form_wrapper {
+    padding: 0px;
+  }
+
+  .billing-app-bg {
+    padding: 0px;
+    background: #c5e4e7;
   }
 }
